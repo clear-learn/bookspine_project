@@ -1,0 +1,19 @@
+name: "arcbook_recognize"
+backend: "python"
+max_batch_size: 0
+
+input [
+  {
+    name: "CROPPED_IMAGE"
+    data_type: TYPE_BYTES
+    dims: [ 1 ]
+  }
+]
+
+output [
+  {
+    name: "OUTPUT_VECTOR"
+    data_type: TYPE_FP32
+    dims: [ 512 ]
+  }
+]
